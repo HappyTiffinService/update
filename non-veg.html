@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Happy Tiffin Service
+    </title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon/favicon.ico">
+    <link rel="manifest" href="favicon/site.webmanifest">
+
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- BOXICONS -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!-- APP CSS -->
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="./css/app.css">
+</head>
+
+<body>
+    <style>
+        h2 {
+            font-size: 1rem;
+        }
+
+        .container {
+            height: 33rem;
+            top: 17.2rem;
+        }
+
+        @media only screen and (max-width: 450px) {
+            .mmm {
+                grid-template-columns: auto auto;
+            }
+
+            .container {
+                height: 45rem;
+                top: 24rem;
+            }
+
+            #btn {
+                position: absolute;
+                top: 93%;
+            }
+
+        }
+
+        .nn img {
+            height: 6rem;
+            width: 6rem;
+        }
+
+        input[type="submit"] {
+            position: relative;
+            left: 40%;
+            top: 5rem;
+            background: #ffb30e;
+            border: 1px solid #f17228;
+            border-radius: 10%;
+            padding: 10px;
+            width: 6rem;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background: #f17228;
+            color: #212121;
+        }
+    </style>
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+        <div class="sidebar-logo">
+            <img src="favicon/icon/android-chrome-512x512.png" alt="Comapny logo" style="    height: 7rem;
+            width: 45%; position: relative; top: 12px;">
+            <div class="sidebar-close" id="sidebar-close">
+                <i class='bx bx-left-arrow-alt'></i>
+            </div>
+        </div>
+        <div class="sidebar-user">
+            <div class="sidebar-user-info">
+                <div class="sidebar-user-name">
+                    Happy Tiffin Service
+                </div>
+            </div>
+            <button class="btn btn-outline">
+                <i class='bx bx-log-out bx-flip-horizontal'></i>
+            </button>
+        </div>
+        <!-- SIDEBAR MENU -->
+        <ul class="sidebar-menu">
+            <li class="sidebar-submenu" class="active">
+                <a href="main.html" class="sidebar-menu-dropdown">
+                    <a href="main.html"><i class='bx bx-home'></i>
+                        <span>Home</span></a>
+                </a>
+            </li>
+            <li>
+                <a href="veg.html" class="sidebar-menu-dropdown">
+                    <i class='bx bx-food-menu' style="color: green;"></i>
+                    <span style="color: green;">Veg</span>
+                </a>
+            </li>
+            <li>
+                <a href="non-veg.html" class="sidebar-menu-dropdown">
+                    <i class='bx bx-food-menu' style="color: red ;"></i>
+                    <span style="color: red;">Non-Veg</span>
+                </a>
+            </li>
+            <li>
+                <a href="video.html">
+                    <i class='bx bxs-videos'></i>
+                    <span>Video</span>
+                </a>
+            </li>
+            <li>
+                <a href="gallery.html">
+                    <i class='bx bx-photo-album'></i>
+                    <span>Gallery</span>
+                </a>
+            </li>
+            <li class="sidebar-submenu">
+                <a href="#" class="sidebar-menu-dropdown">
+                    <i class='bx bx-toggle-left'></i>
+                    <span>Darkmode</span>
+                    <div class="dropdown-icon"></div>
+                </a>
+                <ul class="sidebar-menu sidebar-menu-dropdown-content">
+                    <li>
+                        <a href="#" class="darkmode-toggle" id="darkmode-toggle">
+                            darkmode
+                            <span class="darkmode-switch"></span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <!-- END SIDEBAR MENU -->
+    </div>
+    <!-- END SIDEBAR -->
+
+    <!-- MAIN CONTENT -->
+    <div class="main">
+        <div class="main-header">
+            <div class="mobile-toggle" id="mobile-toggle">
+                <i class='bx bx-menu-alt-right'></i>
+            </div>
+            <div class="main-title">
+                Happy Tiffin Service
+            </div>
+        </div>
+
+
+        <div class="container">
+
+            <h2 style="color: red;text-align: center; font-size: 2rem;">Non-Veg Menu</h2>
+            <br>
+            <br>
+            <div class="mmm" style="overflow: auto;">
+                <div class="nn">
+                    <a href="Nonmonday.html">
+                        <img src="images/Gobi Paratha.jpeg" alt="">
+                        <h2>Monday</h2>
+                    </a>
+                </div>
+                <div class="nn">
+                    <a href="nontuesday.html">
+                        <img src="images/Punjabi Arbi Masala Recipe.jpeg" alt="">
+                        <h2>Tuesday</h2>
+                    </a>
+                </div>
+                <div class="nn">
+                    <a href="nonwednesday.html">
+                        <img src="images/Phulka Roti Recipe, How to make Phulka Chappati at Home.jpeg" alt="">
+                        <h2>Wednesday</h2>
+                    </a>
+                </div>
+                <div class="nn">
+                    <a href="nonthursday.html">
+                        <img src="images/Aloo Palak.png" alt="">
+                        <h2>Thursday</h2>
+                    </a>
+                </div>
+                <div class="nn">
+                    <a href="Nonfriday.html">
+                        <img src="images/pexels-rajesh-tp-1624487.jpg" alt="">
+                        <h2>Friday</h2>
+                    </a>
+                </div>
+                <div class="nn">
+                    <a href="nonsaturday.html">
+                        <img src="images/Fresh Tomato Salad Recipe.jpeg" alt="">
+                        <h2>Saturday</h2>
+                    </a>
+                </div>
+                <div class="nn">
+                    <a href="nonsunday.html">
+                        <img src="images/Egg Fried Rice.jpeg" alt="">
+                        <h2>Sunday</h2>
+                    </a>
+                </div>
+                <a href="whats.html">
+                    <input type="submit" name="" value="Order" id="btn">
+                </a>
+            </div>
+        </div>
+        <br>
+
+
+        <!-- END CATEGORY CHART -->
+    </div>
+
+    <!-- END MAIN CONTENT -->
+
+    <div class="overlay"></div>
+
+    <!-- SCRIPT -->
+
+    <!-- APP JS -->
+    <script src="./js/app.js"></script>
+
+</body>
+
+</html>

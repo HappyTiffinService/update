@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        .happy {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-gap: 20px;
+        }
+
+        @media only screen and (max-width: 650px) {
+            .happy {
+                grid-template-columns: auto auto;
+            }
+        }
+
+        .one,
+        .two,
+        .three,
+        .four,
+        .five,
+        .six,
+        .seven,
+        .eight,
+        .nine,
+        .ten,
+        .eleven,
+        .twelve,
+        .thirteen {
+            width: 75%;
+            height: 12rem;
+            position: relative;
+            top: 6rem;
+            left: 50%;
+            padding: 24px;
+            -webkit-transform: translate(-50%, -50%);
+            background: rgba(255, 255, 255, 0.25);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            backdrop-filter: blur(6.5px);
+            -webkit-backdrop-filter: blur(6.5px);
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+        }
+
+        img {
+            border-radius: 12px;
+            width: 86%;
+            position: absolute;
+            left: 6%;
+            top: 8px;
+            height: 11rem;
+        }
+
+        
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Happy Tiffin Service
+    </title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon/favicon.ico">
+    <link rel="manifest" href="favicon/site.webmanifest">
+
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- BOXICONS -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!-- APP CSS -->
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="./css/app.css">
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+        <div class="sidebar-logo">
+            <img src="favicon/icon/android-chrome-512x512.png" alt="Comapny logo" style="    height: 7rem;
+            width: 45%; position: relative; top: 12px;">
+            <div class="sidebar-close" id="sidebar-close">
+                <i class='bx bx-left-arrow-alt'></i>
+            </div>
+        </div>
+        <div class="sidebar-user">
+            <div class="sidebar-user-info">
+                <div class="sidebar-user-name">
+                    Happy Tiffin Service
+                </div>
+            </div>
+            <button class="btn btn-outline">
+                <i class='bx bx-log-out bx-flip-horizontal'></i>
+            </button>
+        </div>
+        <!-- SIDEBAR MENU -->
+        <ul class="sidebar-menu">
+            <li class="sidebar-submenu" class="active">
+                <a href="main.html" class="sidebar-menu-dropdown">
+                    <a href="main.html"><i class='bx bx-home'></i>
+                        <span>Home</span></a>
+                </a>
+            </li>
+            <li>
+                <a href="veg.html" class="sidebar-menu-dropdown">
+                    <i class='bx bx-food-menu' style="color: green;"></i>
+                    <span style="color: green;">Veg</span>
+                </a>
+            </li>
+            <li>
+                <a href="non-veg.html" class="sidebar-menu-dropdown">
+                    <i class='bx bx-food-menu' style="color: red ;"></i>
+                    <span style="color: red;">Non-Veg</span>
+                </a>
+            </li>
+            <li>
+                <a href="video.html">
+                    <i class='bx bxs-videos'></i>
+                    <span>Video</span>
+                </a>
+            </li>
+            <li>
+                <a href="gallery.html">
+                    <i class='bx bx-photo-album'></i>
+                    <span>Gallery</span>
+                </a>
+            </li>
+            <li class="sidebar-submenu">
+                <a href="#" class="sidebar-menu-dropdown">
+                    <i class='bx bx-toggle-left'></i>
+                    <span>Darkmode</span>
+                    <div class="dropdown-icon"></div>
+                </a>
+                <ul class="sidebar-menu sidebar-menu-dropdown-content">
+                    <li>
+                        <a href="#" class="darkmode-toggle" id="darkmode-toggle">
+                            darkmode
+                            <span class="darkmode-switch"></span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <!-- END SIDEBAR MENU -->
+    </div>
+    <!-- END SIDEBAR -->
+
+    <!-- MAIN CONTENT -->
+    <div class="main">
+        <div class="main-header">
+            <div class="mobile-toggle" id="mobile-toggle">
+                <i class='bx bx-menu-alt-right'></i>
+            </div>
+            <div class="main-title">
+                Happy Tiffin Service
+            </div>
+        </div>
+        <br>
+        <div class="happy">
+            <div class="one">
+                <img src="media/This Mom's Amazing Lunchbox Ideas Will Inspire You.jpeg" alt="">
+            </div>
+            <div class="two">
+                <img src="media/3-Layer Bento Box from Apollo Box.png" alt="">
+            </div>
+            <div class="three">
+                <img src="media/Creamy, Restaurant-Style Matar Paneer.png" alt="">
+            </div>
+            <div class="four">
+                <img src="media/Chole & Rice + Cucumber Salad + Chips - Indian Veggie Delight.jpeg" alt="">
+            </div>
+            <div class="six">
+                <img src="media/Chicken Rice-4.jpg" alt="">
+            </div>
+            <div class="seven">
+                <img src="media/b2479a3c-734f-443d-a9a0-562a2d6ce1f5.jpeg" alt="">
+            </div>
+            <div class="eight">
+                <img src="media/67ac73c2-b1bb-4e20-8797-8f473c153b95.png" alt="">
+            </div>
+            <div class="nine">
+                <img src="media/58726b7d-cc67-472b-98a7-8f550854394c.png" alt="">
+            </div>
+            <div class="ten">
+                <img src="media/3-Layer Bento Box from Apollo Box.png" alt="">
+            </div>
+            <div class="eleven">
+                <img src="media/25+ Lunchbox Ideas for Work.png" alt="">
+            </div>
+            <div class="twelve">
+                <img src="media/10 Indian Thali Meal Ideas.jpeg" alt="">
+            </div>
+            <div class="thirteen">
+                <img src="media/25+ Lunchbox Ideas for Work.jpeg" alt="">
+            </div>
+        </div>
+
+
+        <!-- END CATEGORY CHART -->
+    </div>
+
+
+    <!-- END MAIN CONTENT -->
+
+    <div class="overlay"></div>
+
+    <!-- SCRIPT -->
+
+    <!-- APP JS -->
+    <script src="./js/app.js"></script>
+
+</body>
+
+</html>
